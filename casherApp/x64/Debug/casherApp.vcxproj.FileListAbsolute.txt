@@ -1,0 +1,3 @@
+E:\gui apps\casherApp\casherApp\x64\Debug\casherApp.vcxproj.AssemblyReference.cache
+E:\gui apps\casherApp\casherApp\x64\Debug\casherApp.MyForm.resources
+E:\gui apps\casherApp\casherApp\x64\Debug\casherApp.vcxproj.GenerateResource.cache
