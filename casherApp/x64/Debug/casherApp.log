@@ -1,6 +1,6 @@
 ﻿  MyForm.cpp
-E:\gui apps\casherApp\casherApp\MyForm.h(1124,22): warning C4101: 'ex': unreferenced local variable
+E:\gui apps\casherApp\casherApp\MyForm.h(1149,22): warning C4101: 'ex': unreferenced local variable
 E:\gui apps\casherApp\casherApp\MyForm.cpp(7,6): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-E:\gui apps\casherApp\casherApp\MyForm.h(1091,1): warning C4715: 'casherApp::MyForm::CostOfItem': not all control paths return a value
+E:\gui apps\casherApp\casherApp\MyForm.h(1116,1): warning C4715: 'casherApp::MyForm::CostOfItem': not all control paths return a value
   MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   casherApp.vcxproj -> E:\gui apps\casherApp\x64\Debug\casherApp.exe

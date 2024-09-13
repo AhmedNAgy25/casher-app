@@ -196,7 +196,6 @@ namespace casherApp {
 			// panel1
 			// 
 			this->panel1->BackColor = System::Drawing::SystemColors::MenuHighlight;
-			this->panel1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->panel1->Controls->Add(this->buttonC);
 			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->button6);
@@ -404,6 +403,7 @@ namespace casherApp {
 			this->tako->Text = L"2.9$";
 			this->tako->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->tako->UseVisualStyleBackColor = true;
+			this->tako->Click += gcnew System::EventHandler(this, &MyForm::tako_Click);
 			// 
 			// stake
 			// 
@@ -419,6 +419,7 @@ namespace casherApp {
 			this->stake->Text = L"9.5$";
 			this->stake->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->stake->UseVisualStyleBackColor = true;
+			this->stake->Click += gcnew System::EventHandler(this, &MyForm::stake_Click);
 			// 
 			// sawerma
 			// 
@@ -434,6 +435,7 @@ namespace casherApp {
 			this->sawerma->Text = L"4.9$";
 			this->sawerma->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->sawerma->UseVisualStyleBackColor = true;
+			this->sawerma->Click += gcnew System::EventHandler(this, &MyForm::sawerma_Click);
 			// 
 			// salata
 			// 
@@ -449,6 +451,7 @@ namespace casherApp {
 			this->salata->Text = L"0.5$";
 			this->salata->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->salata->UseVisualStyleBackColor = true;
+			this->salata->Click += gcnew System::EventHandler(this, &MyForm::salata_Click);
 			// 
 			// pasta
 			// 
@@ -464,6 +467,7 @@ namespace casherApp {
 			this->pasta->Text = L"3$";
 			this->pasta->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->pasta->UseVisualStyleBackColor = true;
+			this->pasta->Click += gcnew System::EventHandler(this, &MyForm::pasta_Click);
 			// 
 			// korien_ramen
 			// 
@@ -479,6 +483,7 @@ namespace casherApp {
 			this->korien_ramen->Text = L"3.2$";
 			this->korien_ramen->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->korien_ramen->UseVisualStyleBackColor = true;
+			this->korien_ramen->Click += gcnew System::EventHandler(this, &MyForm::korien_ramen_Click);
 			// 
 			// ramen
 			// 
@@ -494,6 +499,7 @@ namespace casherApp {
 			this->ramen->Text = L"3.5$";
 			this->ramen->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->ramen->UseVisualStyleBackColor = true;
+			this->ramen->Click += gcnew System::EventHandler(this, &MyForm::ramen_Click);
 			// 
 			// pizza
 			// 
@@ -509,6 +515,7 @@ namespace casherApp {
 			this->pizza->Text = L"9$";
 			this->pizza->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->pizza->UseVisualStyleBackColor = true;
+			this->pizza->Click += gcnew System::EventHandler(this, &MyForm::pizza_Click);
 			// 
 			// cake_chocolate
 			// 
@@ -524,6 +531,7 @@ namespace casherApp {
 			this->cake_chocolate->Text = L"8.5$";
 			this->cake_chocolate->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->cake_chocolate->UseVisualStyleBackColor = true;
+			this->cake_chocolate->Click += gcnew System::EventHandler(this, &MyForm::cake_chocolate_Click);
 			// 
 			// candys
 			// 
@@ -539,6 +547,7 @@ namespace casherApp {
 			this->candys->Text = L"0.5$";
 			this->candys->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->candys->UseVisualStyleBackColor = true;
+			this->candys->Click += gcnew System::EventHandler(this, &MyForm::candys_Click);
 			// 
 			// burger_chicken
 			// 
@@ -554,6 +563,7 @@ namespace casherApp {
 			this->burger_chicken->Text = L"4.5$";
 			this->burger_chicken->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->burger_chicken->UseVisualStyleBackColor = true;
+			this->burger_chicken->Click += gcnew System::EventHandler(this, &MyForm::burger_chicken_Click);
 			// 
 			// burger_beef
 			// 
@@ -569,6 +579,7 @@ namespace casherApp {
 			this->burger_beef->Text = L"5$";
 			this->burger_beef->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->burger_beef->UseVisualStyleBackColor = true;
+			this->burger_beef->Click += gcnew System::EventHandler(this, &MyForm::burger_beef_Click);
 			// 
 			// molton_cake
 			// 
@@ -584,6 +595,7 @@ namespace casherApp {
 			this->molton_cake->Text = L"4$";
 			this->molton_cake->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->molton_cake->UseVisualStyleBackColor = true;
+			this->molton_cake->Click += gcnew System::EventHandler(this, &MyForm::molton_cake_Click);
 			// 
 			// donat
 			// 
@@ -599,6 +611,7 @@ namespace casherApp {
 			this->donat->Text = L"1.5$";
 			this->donat->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->donat->UseVisualStyleBackColor = true;
+			this->donat->Click += gcnew System::EventHandler(this, &MyForm::donat_Click);
 			// 
 			// icecream
 			// 
@@ -614,6 +627,7 @@ namespace casherApp {
 			this->icecream->Text = L"1$";
 			this->icecream->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->icecream->UseVisualStyleBackColor = true;
+			this->icecream->Click += gcnew System::EventHandler(this, &MyForm::icecream_Click);
 			// 
 			// ice_tea
 			// 
@@ -629,6 +643,7 @@ namespace casherApp {
 			this->ice_tea->Text = L"1.3$";
 			this->ice_tea->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->ice_tea->UseVisualStyleBackColor = true;
+			this->ice_tea->Click += gcnew System::EventHandler(this, &MyForm::ice_tea_Click);
 			// 
 			// chese_cake
 			// 
@@ -644,6 +659,7 @@ namespace casherApp {
 			this->chese_cake->Text = L"2.5$";
 			this->chese_cake->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->chese_cake->UseVisualStyleBackColor = true;
+			this->chese_cake->Click += gcnew System::EventHandler(this, &MyForm::chese_cake_Click);
 			// 
 			// cake_vanilla
 			// 
@@ -659,6 +675,7 @@ namespace casherApp {
 			this->cake_vanilla->Text = L"2.3$";
 			this->cake_vanilla->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->cake_vanilla->UseVisualStyleBackColor = true;
+			this->cake_vanilla->Click += gcnew System::EventHandler(this, &MyForm::cake_vanilla_Click);
 			// 
 			// waffel
 			// 
@@ -674,6 +691,7 @@ namespace casherApp {
 			this->waffel->Text = L"2.7$";
 			this->waffel->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->waffel->UseVisualStyleBackColor = true;
+			this->waffel->Click += gcnew System::EventHandler(this, &MyForm::waffel_Click);
 			// 
 			// rolls_cake
 			// 
@@ -689,6 +707,7 @@ namespace casherApp {
 			this->rolls_cake->Text = L"3$";
 			this->rolls_cake->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->rolls_cake->UseVisualStyleBackColor = true;
+			this->rolls_cake->Click += gcnew System::EventHandler(this, &MyForm::rolls_cake_Click);
 			// 
 			// chocolate_drink
 			// 
@@ -704,6 +723,7 @@ namespace casherApp {
 			this->chocolate_drink->Text = L"1.50$";
 			this->chocolate_drink->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->chocolate_drink->UseVisualStyleBackColor = true;
+			this->chocolate_drink->Click += gcnew System::EventHandler(this, &MyForm::chocolate_drink_Click);
 			// 
 			// green_tea
 			// 
@@ -719,6 +739,7 @@ namespace casherApp {
 			this->green_tea->Text = L"2.30$";
 			this->green_tea->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->green_tea->UseVisualStyleBackColor = true;
+			this->green_tea->Click += gcnew System::EventHandler(this, &MyForm::green_tea_Click);
 			// 
 			// coffe
 			// 
@@ -734,6 +755,7 @@ namespace casherApp {
 			this->coffe->Text = L"1.20$";
 			this->coffe->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->coffe->UseVisualStyleBackColor = true;
+			this->coffe->Click += gcnew System::EventHandler(this, &MyForm::coffe_Click);
 			// 
 			// watermelon_drink
 			// 
@@ -749,6 +771,7 @@ namespace casherApp {
 			this->watermelon_drink->Text = L"2$";
 			this->watermelon_drink->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->watermelon_drink->UseVisualStyleBackColor = true;
+			this->watermelon_drink->Click += gcnew System::EventHandler(this, &MyForm::watermelon_drink_Click);
 			// 
 			// panel3
 			// 
@@ -784,6 +807,7 @@ namespace casherApp {
 			// 
 			// buttonRemoveItem
 			// 
+			this->buttonRemoveItem->BackColor = System::Drawing::SystemColors::ControlLight;
 			this->buttonRemoveItem->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->buttonRemoveItem->Location = System::Drawing::Point(191, 84);
@@ -791,11 +815,12 @@ namespace casherApp {
 			this->buttonRemoveItem->Size = System::Drawing::Size(172, 68);
 			this->buttonRemoveItem->TabIndex = 0;
 			this->buttonRemoveItem->Text = L"remove item";
-			this->buttonRemoveItem->UseVisualStyleBackColor = true;
+			this->buttonRemoveItem->UseVisualStyleBackColor = false;
 			this->buttonRemoveItem->Click += gcnew System::EventHandler(this, &MyForm::buttonRemoveItem_Click);
 			// 
 			// buttonPrint
 			// 
+			this->buttonPrint->BackColor = System::Drawing::SystemColors::ControlLight;
 			this->buttonPrint->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->buttonPrint->Location = System::Drawing::Point(13, 84);
@@ -803,11 +828,12 @@ namespace casherApp {
 			this->buttonPrint->Size = System::Drawing::Size(172, 68);
 			this->buttonPrint->TabIndex = 0;
 			this->buttonPrint->Text = L"print";
-			this->buttonPrint->UseVisualStyleBackColor = true;
+			this->buttonPrint->UseVisualStyleBackColor = false;
 			this->buttonPrint->Click += gcnew System::EventHandler(this, &MyForm::buttonPrint_Click);
 			// 
 			// buttonReset
 			// 
+			this->buttonReset->BackColor = System::Drawing::SystemColors::ControlLight;
 			this->buttonReset->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->buttonReset->Location = System::Drawing::Point(191, 11);
@@ -815,11 +841,12 @@ namespace casherApp {
 			this->buttonReset->Size = System::Drawing::Size(172, 68);
 			this->buttonReset->TabIndex = 0;
 			this->buttonReset->Text = L"reset";
-			this->buttonReset->UseVisualStyleBackColor = true;
+			this->buttonReset->UseVisualStyleBackColor = false;
 			this->buttonReset->Click += gcnew System::EventHandler(this, &MyForm::buttonReset_Click);
 			// 
 			// buttonPay
 			// 
+			this->buttonPay->BackColor = System::Drawing::SystemColors::ControlLight;
 			this->buttonPay->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->buttonPay->Location = System::Drawing::Point(13, 11);
@@ -827,7 +854,7 @@ namespace casherApp {
 			this->buttonPay->Size = System::Drawing::Size(172, 68);
 			this->buttonPay->TabIndex = 0;
 			this->buttonPay->Text = L"Pay";
-			this->buttonPay->UseVisualStyleBackColor = true;
+			this->buttonPay->UseVisualStyleBackColor = false;
 			this->buttonPay->Click += gcnew System::EventHandler(this, &MyForm::buttonPay_Click);
 			// 
 			// panel6
@@ -986,7 +1013,8 @@ namespace casherApp {
 			// 
 			// dataGridView1
 			// 
-			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView1->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->dataGridView1->BackgroundColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(3) {
@@ -1006,27 +1034,23 @@ namespace casherApp {
 			this->Column1->HeaderText = L"item";
 			this->Column1->MinimumWidth = 6;
 			this->Column1->Name = L"Column1";
-			this->Column1->Width = 61;
 			// 
 			// Column2
 			// 
 			this->Column2->HeaderText = L"qty";
 			this->Column2->MinimumWidth = 6;
 			this->Column2->Name = L"Column2";
-			this->Column2->Width = 54;
 			// 
 			// Column3
 			// 
 			this->Column3->HeaderText = L"amount";
 			this->Column3->MinimumWidth = 6;
 			this->Column3->Name = L"Column3";
-			this->Column3->Width = 80;
 			// 
 			// lblBarCode
 			// 
 			this->lblBarCode->BackColor = System::Drawing::SystemColors::ControlLightLight;
-			this->lblBarCode->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->lblBarCode->Font = (gcnew System::Drawing::Font(L"CODE3X", 28.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->lblBarCode->Font = (gcnew System::Drawing::Font(L"CODE3X", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->lblBarCode->Location = System::Drawing::Point(366, 356);
 			this->lblBarCode->Name = L"lblBarCode";
@@ -1054,14 +1078,16 @@ namespace casherApp {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::SystemColors::ControlDark;
+			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ClientSize = System::Drawing::Size(1368, 741);
 			this->Controls->Add(this->lblBarCode);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Bondok_Casher";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->panel1->ResumeLayout(false);
@@ -1202,6 +1228,103 @@ private: System::Void buttonPrint_Click(System::Object^ sender, System::EventArg
 private: System::Void printDocument1_PrintPage(System::Object^ sender, System::Drawing::Printing::PrintPageEventArgs^ e) {
 	e ->Graphics->DrawImage(bitmap, 0, 0);
 }
+//cards iteam
+private: System::Void watermelon_drink_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("watermelon drink", "1", 2);
+	AddCost();
+}
+private: System::Void coffe_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("coffe", "1", 1.20);
+	AddCost();
+}
+private: System::Void green_tea_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("green tea", "1", 2.30);
+	AddCost();
+}
+private: System::Void chocolate_drink_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("chocolate drink", "1", 1.50);
+	AddCost();
+}
 
+private: System::Void rolls_cake_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("rolls cake", "1", 3);
+	AddCost();
+}
+private: System::Void waffel_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("waffel", "1", 2.70);
+	AddCost();
+}
+private: System::Void cake_vanilla_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("cake vanilla", "1", 2.30);
+	AddCost();
+}
+private: System::Void chese_cake_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("chese cake", "1", 2.50);
+	AddCost();
+}
+private: System::Void ice_tea_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("ice tea", "1", 1.30);
+	AddCost();
+}
+private: System::Void icecream_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("icecream", "1", 1);
+	AddCost();
+}
+private: System::Void donat_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("donat", "1", 1.50);
+	AddCost();
+}
+private: System::Void molton_cake_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("molton cake", "1", 4);
+	AddCost();
+}
+private: System::Void burger_beef_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("burger beef", "1", 5);
+	AddCost();
+}
+private: System::Void burger_chicken_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("burger chicken", "1", 4.50);
+	AddCost();
+}
+private: System::Void candys_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("candys", "1", 0.50);
+	AddCost();
+}
+private: System::Void cake_chocolate_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("cake chocolate", "1", 8.50);
+	AddCost();
+}
+private: System::Void pizza_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("pizza", "1", 9);
+	AddCost();
+}
+private: System::Void ramen_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("ramen", "1", 3.50);
+	AddCost();
+}
+private: System::Void korien_ramen_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("korien_ramen", "1", 3.20);
+	AddCost();
+}
+private: System::Void pasta_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("pasta", "1", 3);
+	AddCost();
+}
+private: System::Void salata_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("salata", "1", 0.50);
+	AddCost();
+}
+private: System::Void sawerma_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("sawerma", "1", 4.90);
+	AddCost();
+}
+private: System::Void stake_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("stake", "1", 9.50);
+	AddCost();
+}
+private: System::Void tako_Click(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Add("tako", "1", 2.90);
+	AddCost();
+}
 };
 }
