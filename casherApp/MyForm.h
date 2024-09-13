@@ -76,6 +76,31 @@ namespace casherApp {
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::PrintPreviewDialog^ printPreviewDialog1;
 	private: System::Drawing::Printing::PrintDocument^ printDocument1;
+	private: System::Windows::Forms::Button^ watermelon_drink;
+	private: System::Windows::Forms::Button^ chocolate_drink;
+	private: System::Windows::Forms::Button^ green_tea;
+	private: System::Windows::Forms::Button^ coffe;
+	private: System::Windows::Forms::Button^ tako;
+	private: System::Windows::Forms::Button^ stake;
+	private: System::Windows::Forms::Button^ sawerma;
+	private: System::Windows::Forms::Button^ salata;
+	private: System::Windows::Forms::Button^ pasta;
+	private: System::Windows::Forms::Button^ korien_ramen;
+	private: System::Windows::Forms::Button^ ramen;
+	private: System::Windows::Forms::Button^ pizza;
+	private: System::Windows::Forms::Button^ cake_chocolate;
+	private: System::Windows::Forms::Button^ candys;
+	private: System::Windows::Forms::Button^ burger_chicken;
+	private: System::Windows::Forms::Button^ burger_beef;
+	private: System::Windows::Forms::Button^ molton_cake;
+	private: System::Windows::Forms::Button^ donat;
+	private: System::Windows::Forms::Button^ icecream;
+	private: System::Windows::Forms::Button^ ice_tea;
+	private: System::Windows::Forms::Button^ chese_cake;
+	private: System::Windows::Forms::Button^ cake_vanilla;
+	private: System::Windows::Forms::Button^ waffel;
+	private: System::Windows::Forms::Button^ rolls_cake;
+
 	protected:
 
 	private:
@@ -106,6 +131,30 @@ namespace casherApp {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->tako = (gcnew System::Windows::Forms::Button());
+			this->stake = (gcnew System::Windows::Forms::Button());
+			this->sawerma = (gcnew System::Windows::Forms::Button());
+			this->salata = (gcnew System::Windows::Forms::Button());
+			this->pasta = (gcnew System::Windows::Forms::Button());
+			this->korien_ramen = (gcnew System::Windows::Forms::Button());
+			this->ramen = (gcnew System::Windows::Forms::Button());
+			this->pizza = (gcnew System::Windows::Forms::Button());
+			this->cake_chocolate = (gcnew System::Windows::Forms::Button());
+			this->candys = (gcnew System::Windows::Forms::Button());
+			this->burger_chicken = (gcnew System::Windows::Forms::Button());
+			this->burger_beef = (gcnew System::Windows::Forms::Button());
+			this->molton_cake = (gcnew System::Windows::Forms::Button());
+			this->donat = (gcnew System::Windows::Forms::Button());
+			this->icecream = (gcnew System::Windows::Forms::Button());
+			this->ice_tea = (gcnew System::Windows::Forms::Button());
+			this->chese_cake = (gcnew System::Windows::Forms::Button());
+			this->cake_vanilla = (gcnew System::Windows::Forms::Button());
+			this->waffel = (gcnew System::Windows::Forms::Button());
+			this->rolls_cake = (gcnew System::Windows::Forms::Button());
+			this->chocolate_drink = (gcnew System::Windows::Forms::Button());
+			this->green_tea = (gcnew System::Windows::Forms::Button());
+			this->coffe = (gcnew System::Windows::Forms::Button());
+			this->watermelon_drink = (gcnew System::Windows::Forms::Button());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->panel7 = (gcnew System::Windows::Forms::Panel());
@@ -135,6 +184,7 @@ namespace casherApp {
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->panel1->SuspendLayout();
+			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->panel4->SuspendLayout();
 			this->panel7->SuspendLayout();
@@ -311,11 +361,370 @@ namespace casherApp {
 			// panel2
 			// 
 			this->panel2->BackColor = System::Drawing::SystemColors::MenuHighlight;
-			this->panel2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel2->Controls->Add(this->tako);
+			this->panel2->Controls->Add(this->stake);
+			this->panel2->Controls->Add(this->sawerma);
+			this->panel2->Controls->Add(this->salata);
+			this->panel2->Controls->Add(this->pasta);
+			this->panel2->Controls->Add(this->korien_ramen);
+			this->panel2->Controls->Add(this->ramen);
+			this->panel2->Controls->Add(this->pizza);
+			this->panel2->Controls->Add(this->cake_chocolate);
+			this->panel2->Controls->Add(this->candys);
+			this->panel2->Controls->Add(this->burger_chicken);
+			this->panel2->Controls->Add(this->burger_beef);
+			this->panel2->Controls->Add(this->molton_cake);
+			this->panel2->Controls->Add(this->donat);
+			this->panel2->Controls->Add(this->icecream);
+			this->panel2->Controls->Add(this->ice_tea);
+			this->panel2->Controls->Add(this->chese_cake);
+			this->panel2->Controls->Add(this->cake_vanilla);
+			this->panel2->Controls->Add(this->waffel);
+			this->panel2->Controls->Add(this->rolls_cake);
+			this->panel2->Controls->Add(this->chocolate_drink);
+			this->panel2->Controls->Add(this->green_tea);
+			this->panel2->Controls->Add(this->coffe);
+			this->panel2->Controls->Add(this->watermelon_drink);
 			this->panel2->Location = System::Drawing::Point(695, 8);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(649, 435);
+			this->panel2->Size = System::Drawing::Size(650, 435);
 			this->panel2->TabIndex = 0;
+			// 
+			// tako
+			// 
+			this->tako->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"tako.BackgroundImage")));
+			this->tako->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tako->Location = System::Drawing::Point(526, 322);
+			this->tako->Margin = System::Windows::Forms::Padding(0);
+			this->tako->Name = L"tako";
+			this->tako->Size = System::Drawing::Size(95, 95);
+			this->tako->TabIndex = 23;
+			this->tako->Text = L"button26";
+			this->tako->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->tako->UseVisualStyleBackColor = true;
+			// 
+			// stake
+			// 
+			this->stake->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"stake.BackgroundImage")));
+			this->stake->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->stake->Location = System::Drawing::Point(526, 221);
+			this->stake->Margin = System::Windows::Forms::Padding(0);
+			this->stake->Name = L"stake";
+			this->stake->Size = System::Drawing::Size(95, 95);
+			this->stake->TabIndex = 22;
+			this->stake->Text = L"button27";
+			this->stake->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->stake->UseVisualStyleBackColor = true;
+			// 
+			// sawerma
+			// 
+			this->sawerma->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"sawerma.BackgroundImage")));
+			this->sawerma->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->sawerma->Location = System::Drawing::Point(526, 120);
+			this->sawerma->Margin = System::Windows::Forms::Padding(0);
+			this->sawerma->Name = L"sawerma";
+			this->sawerma->Size = System::Drawing::Size(95, 95);
+			this->sawerma->TabIndex = 21;
+			this->sawerma->Text = L"button28";
+			this->sawerma->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->sawerma->UseVisualStyleBackColor = true;
+			// 
+			// salata
+			// 
+			this->salata->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"salata.BackgroundImage")));
+			this->salata->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->salata->Location = System::Drawing::Point(526, 19);
+			this->salata->Margin = System::Windows::Forms::Padding(0);
+			this->salata->Name = L"salata";
+			this->salata->Size = System::Drawing::Size(95, 95);
+			this->salata->TabIndex = 20;
+			this->salata->Text = L"button29";
+			this->salata->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->salata->UseVisualStyleBackColor = true;
+			// 
+			// pasta
+			// 
+			this->pasta->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pasta.BackgroundImage")));
+			this->pasta->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->pasta->Location = System::Drawing::Point(426, 322);
+			this->pasta->Margin = System::Windows::Forms::Padding(0);
+			this->pasta->Name = L"pasta";
+			this->pasta->Size = System::Drawing::Size(95, 95);
+			this->pasta->TabIndex = 19;
+			this->pasta->Text = L"button30";
+			this->pasta->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->pasta->UseVisualStyleBackColor = true;
+			// 
+			// korien_ramen
+			// 
+			this->korien_ramen->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"korien_ramen.BackgroundImage")));
+			this->korien_ramen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->korien_ramen->Location = System::Drawing::Point(426, 221);
+			this->korien_ramen->Margin = System::Windows::Forms::Padding(0);
+			this->korien_ramen->Name = L"korien_ramen";
+			this->korien_ramen->Size = System::Drawing::Size(95, 95);
+			this->korien_ramen->TabIndex = 18;
+			this->korien_ramen->Text = L"button31";
+			this->korien_ramen->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->korien_ramen->UseVisualStyleBackColor = true;
+			// 
+			// ramen
+			// 
+			this->ramen->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"ramen.BackgroundImage")));
+			this->ramen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ramen->Location = System::Drawing::Point(426, 120);
+			this->ramen->Margin = System::Windows::Forms::Padding(0);
+			this->ramen->Name = L"ramen";
+			this->ramen->Size = System::Drawing::Size(95, 95);
+			this->ramen->TabIndex = 17;
+			this->ramen->Text = L"button32";
+			this->ramen->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->ramen->UseVisualStyleBackColor = true;
+			// 
+			// pizza
+			// 
+			this->pizza->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pizza.BackgroundImage")));
+			this->pizza->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->pizza->Location = System::Drawing::Point(426, 19);
+			this->pizza->Margin = System::Windows::Forms::Padding(0);
+			this->pizza->Name = L"pizza";
+			this->pizza->Size = System::Drawing::Size(95, 95);
+			this->pizza->TabIndex = 16;
+			this->pizza->Text = L"button33";
+			this->pizza->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->pizza->UseVisualStyleBackColor = true;
+			// 
+			// cake_chocolate
+			// 
+			this->cake_chocolate->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"cake_chocolate.BackgroundImage")));
+			this->cake_chocolate->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->cake_chocolate->Location = System::Drawing::Point(327, 322);
+			this->cake_chocolate->Margin = System::Windows::Forms::Padding(0);
+			this->cake_chocolate->Name = L"cake_chocolate";
+			this->cake_chocolate->Size = System::Drawing::Size(95, 95);
+			this->cake_chocolate->TabIndex = 15;
+			this->cake_chocolate->Text = L"button18";
+			this->cake_chocolate->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->cake_chocolate->UseVisualStyleBackColor = true;
+			// 
+			// candys
+			// 
+			this->candys->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"candys.BackgroundImage")));
+			this->candys->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->candys->Location = System::Drawing::Point(327, 221);
+			this->candys->Margin = System::Windows::Forms::Padding(0);
+			this->candys->Name = L"candys";
+			this->candys->Size = System::Drawing::Size(95, 95);
+			this->candys->TabIndex = 14;
+			this->candys->Text = L"button19";
+			this->candys->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->candys->UseVisualStyleBackColor = true;
+			// 
+			// burger_chicken
+			// 
+			this->burger_chicken->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"burger_chicken.BackgroundImage")));
+			this->burger_chicken->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->burger_chicken->Location = System::Drawing::Point(327, 120);
+			this->burger_chicken->Margin = System::Windows::Forms::Padding(0);
+			this->burger_chicken->Name = L"burger_chicken";
+			this->burger_chicken->Size = System::Drawing::Size(95, 95);
+			this->burger_chicken->TabIndex = 13;
+			this->burger_chicken->Text = L"button20";
+			this->burger_chicken->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->burger_chicken->UseVisualStyleBackColor = true;
+			// 
+			// burger_beef
+			// 
+			this->burger_beef->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"burger_beef.BackgroundImage")));
+			this->burger_beef->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->burger_beef->Location = System::Drawing::Point(327, 19);
+			this->burger_beef->Margin = System::Windows::Forms::Padding(0);
+			this->burger_beef->Name = L"burger_beef";
+			this->burger_beef->Size = System::Drawing::Size(95, 95);
+			this->burger_beef->TabIndex = 12;
+			this->burger_beef->Text = L"button21";
+			this->burger_beef->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->burger_beef->UseVisualStyleBackColor = true;
+			// 
+			// molton_cake
+			// 
+			this->molton_cake->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"molton_cake.BackgroundImage")));
+			this->molton_cake->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->molton_cake->Location = System::Drawing::Point(227, 322);
+			this->molton_cake->Margin = System::Windows::Forms::Padding(0);
+			this->molton_cake->Name = L"molton_cake";
+			this->molton_cake->Size = System::Drawing::Size(95, 95);
+			this->molton_cake->TabIndex = 11;
+			this->molton_cake->Text = L"button22";
+			this->molton_cake->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->molton_cake->UseVisualStyleBackColor = true;
+			// 
+			// donat
+			// 
+			this->donat->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"donat.BackgroundImage")));
+			this->donat->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->donat->Location = System::Drawing::Point(227, 221);
+			this->donat->Margin = System::Windows::Forms::Padding(0);
+			this->donat->Name = L"donat";
+			this->donat->Size = System::Drawing::Size(95, 95);
+			this->donat->TabIndex = 10;
+			this->donat->Text = L"button23";
+			this->donat->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->donat->UseVisualStyleBackColor = true;
+			// 
+			// icecream
+			// 
+			this->icecream->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"icecream.BackgroundImage")));
+			this->icecream->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->icecream->Location = System::Drawing::Point(227, 120);
+			this->icecream->Margin = System::Windows::Forms::Padding(0);
+			this->icecream->Name = L"icecream";
+			this->icecream->Size = System::Drawing::Size(95, 95);
+			this->icecream->TabIndex = 9;
+			this->icecream->Text = L"button24";
+			this->icecream->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->icecream->UseVisualStyleBackColor = true;
+			// 
+			// ice_tea
+			// 
+			this->ice_tea->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"ice_tea.BackgroundImage")));
+			this->ice_tea->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ice_tea->Location = System::Drawing::Point(227, 19);
+			this->ice_tea->Margin = System::Windows::Forms::Padding(0);
+			this->ice_tea->Name = L"ice_tea";
+			this->ice_tea->Size = System::Drawing::Size(95, 95);
+			this->ice_tea->TabIndex = 8;
+			this->ice_tea->Text = L"button25";
+			this->ice_tea->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->ice_tea->UseVisualStyleBackColor = true;
+			// 
+			// chese_cake
+			// 
+			this->chese_cake->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"chese_cake.BackgroundImage")));
+			this->chese_cake->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->chese_cake->Location = System::Drawing::Point(126, 322);
+			this->chese_cake->Margin = System::Windows::Forms::Padding(0);
+			this->chese_cake->Name = L"chese_cake";
+			this->chese_cake->Size = System::Drawing::Size(95, 95);
+			this->chese_cake->TabIndex = 7;
+			this->chese_cake->Text = L"button14";
+			this->chese_cake->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->chese_cake->UseVisualStyleBackColor = true;
+			// 
+			// cake_vanilla
+			// 
+			this->cake_vanilla->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"cake_vanilla.BackgroundImage")));
+			this->cake_vanilla->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->cake_vanilla->Location = System::Drawing::Point(126, 221);
+			this->cake_vanilla->Margin = System::Windows::Forms::Padding(0);
+			this->cake_vanilla->Name = L"cake_vanilla";
+			this->cake_vanilla->Size = System::Drawing::Size(95, 95);
+			this->cake_vanilla->TabIndex = 6;
+			this->cake_vanilla->Text = L"button15";
+			this->cake_vanilla->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->cake_vanilla->UseVisualStyleBackColor = true;
+			// 
+			// waffel
+			// 
+			this->waffel->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"waffel.BackgroundImage")));
+			this->waffel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->waffel->Location = System::Drawing::Point(126, 120);
+			this->waffel->Margin = System::Windows::Forms::Padding(0);
+			this->waffel->Name = L"waffel";
+			this->waffel->Size = System::Drawing::Size(95, 95);
+			this->waffel->TabIndex = 5;
+			this->waffel->Text = L"button16";
+			this->waffel->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->waffel->UseVisualStyleBackColor = true;
+			// 
+			// rolls_cake
+			// 
+			this->rolls_cake->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"rolls_cake.BackgroundImage")));
+			this->rolls_cake->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->rolls_cake->Location = System::Drawing::Point(126, 19);
+			this->rolls_cake->Margin = System::Windows::Forms::Padding(0);
+			this->rolls_cake->Name = L"rolls_cake";
+			this->rolls_cake->Size = System::Drawing::Size(95, 95);
+			this->rolls_cake->TabIndex = 4;
+			this->rolls_cake->Text = L"button17";
+			this->rolls_cake->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->rolls_cake->UseVisualStyleBackColor = true;
+			// 
+			// chocolate_drink
+			// 
+			this->chocolate_drink->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"chocolate_drink.BackgroundImage")));
+			this->chocolate_drink->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->chocolate_drink->Location = System::Drawing::Point(26, 322);
+			this->chocolate_drink->Margin = System::Windows::Forms::Padding(0);
+			this->chocolate_drink->Name = L"chocolate_drink";
+			this->chocolate_drink->Size = System::Drawing::Size(95, 95);
+			this->chocolate_drink->TabIndex = 3;
+			this->chocolate_drink->Text = L"button13";
+			this->chocolate_drink->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->chocolate_drink->UseVisualStyleBackColor = true;
+			// 
+			// green_tea
+			// 
+			this->green_tea->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"green_tea.BackgroundImage")));
+			this->green_tea->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->green_tea->Location = System::Drawing::Point(26, 221);
+			this->green_tea->Margin = System::Windows::Forms::Padding(0);
+			this->green_tea->Name = L"green_tea";
+			this->green_tea->Size = System::Drawing::Size(95, 95);
+			this->green_tea->TabIndex = 2;
+			this->green_tea->Text = L"button12";
+			this->green_tea->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->green_tea->UseVisualStyleBackColor = true;
+			// 
+			// coffe
+			// 
+			this->coffe->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"coffe.BackgroundImage")));
+			this->coffe->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->coffe->Location = System::Drawing::Point(26, 120);
+			this->coffe->Margin = System::Windows::Forms::Padding(0);
+			this->coffe->Name = L"coffe";
+			this->coffe->Size = System::Drawing::Size(95, 95);
+			this->coffe->TabIndex = 1;
+			this->coffe->Text = L"button11";
+			this->coffe->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->coffe->UseVisualStyleBackColor = true;
+			// 
+			// watermelon_drink
+			// 
+			this->watermelon_drink->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"watermelon_drink.BackgroundImage")));
+			this->watermelon_drink->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->watermelon_drink->Location = System::Drawing::Point(26, 19);
+			this->watermelon_drink->Margin = System::Windows::Forms::Padding(0);
+			this->watermelon_drink->Name = L"watermelon_drink";
+			this->watermelon_drink->Size = System::Drawing::Size(95, 95);
+			this->watermelon_drink->TabIndex = 0;
+			this->watermelon_drink->Text = L"button10";
+			this->watermelon_drink->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->watermelon_drink->UseVisualStyleBackColor = true;
 			// 
 			// panel3
 			// 
@@ -632,6 +1041,7 @@ namespace casherApp {
 			this->Text = L"Bondok_Casher";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->panel1->ResumeLayout(false);
+			this->panel2->ResumeLayout(false);
 			this->panel3->ResumeLayout(false);
 			this->panel4->ResumeLayout(false);
 			this->panel7->ResumeLayout(false);
