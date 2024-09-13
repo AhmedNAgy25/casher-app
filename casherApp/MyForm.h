@@ -117,6 +117,7 @@ namespace casherApp {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->buttonC = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -1013,8 +1014,11 @@ namespace casherApp {
 			// 
 			// dataGridView1
 			// 
+			dataGridViewCellStyle1->Padding = System::Windows::Forms::Padding(1);
+			this->dataGridView1->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			this->dataGridView1->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
+			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView1->BackgroundColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(3) {
@@ -1034,18 +1038,21 @@ namespace casherApp {
 			this->Column1->HeaderText = L"item";
 			this->Column1->MinimumWidth = 6;
 			this->Column1->Name = L"Column1";
+			this->Column1->Width = 61;
 			// 
 			// Column2
 			// 
 			this->Column2->HeaderText = L"qty";
 			this->Column2->MinimumWidth = 6;
 			this->Column2->Name = L"Column2";
+			this->Column2->Width = 54;
 			// 
 			// Column3
 			// 
 			this->Column3->HeaderText = L"amount";
 			this->Column3->MinimumWidth = 6;
 			this->Column3->Name = L"Column3";
+			this->Column3->Width = 80;
 			// 
 			// lblBarCode
 			// 
@@ -1303,7 +1310,7 @@ private: System::Void ramen_Click(System::Object^ sender, System::EventArgs^ e) 
 	AddCost();
 }
 private: System::Void korien_ramen_Click(System::Object^ sender, System::EventArgs^ e) {
-	dataGridView1->Rows->Add("korien_ramen", "1", 3.20);
+	dataGridView1->Rows->Add("korien ramen", "1", 3.20);
 	AddCost();
 }
 private: System::Void pasta_Click(System::Object^ sender, System::EventArgs^ e) {
